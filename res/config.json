@@ -1,0 +1,17 @@
+{
+	"website": [{
+		"host": [{
+			"host": "127.0.0.1:50000",
+			"ssl": false
+		}],
+		"proxy": [{
+			"src": "/",
+			"dst": "/",
+			"remote": "https://www.baidu.com",
+			"headers": [{
+				"key": "Host",
+				"value": "www.baidu.com"
+			}]
+		}]
+	}]
+}
