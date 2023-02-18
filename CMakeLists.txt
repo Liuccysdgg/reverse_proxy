@@ -41,7 +41,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
     ${NEWOBJ_PATH}/lib/libthirdparty_mysql_debug.a
     ${NEWOBJ_PATH}/lib/libthirdparty_redis_debug.a
 	${NEWOBJ_PATH}/lib/libthirdparty_clickhouse_debug.a
-    ${NEWOBJ_PATH}/lib/libhpsocket.so
+    ${NEWOBJ_PATH}/lib/libhpsocket_d.so
     ${NEWOBJ_PATH}/lib/libnewobj_debug.a
     ${NEWOBJ_PATH}/lib/libclickhouse-cpp-lib.a
     ${NEWOBJ_PATH}/lib/libabsl_int128.a

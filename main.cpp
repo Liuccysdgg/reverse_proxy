@@ -5,6 +5,9 @@
 #include "network/http/http_agent.h"
 #include "network/http/http_center.h"
 #include "network/http/http_website.h"
+#include "network/http/http_router.h"
+#include "network/http/http_request.h"
+#include "network/http/http_response.h"
 int main()
 {
     // 创建控制中心
@@ -26,6 +29,9 @@ int main()
     }
 
     newobj::log->info("start success");
+
+
+
 
     while(true){
         std::string input;

@@ -1,17 +1,31 @@
 {
 	"website": [{
 		"host": [{
-			"host": "127.0.0.1:50000",
+			"host": "121.4.122.35:7777",
 			"ssl": false
 		}],
 		"proxy": [{
 			"src": "/",
 			"dst": "/",
 			"remote": "https://www.baidu.com",
-			"headers": [{
+            "headers": [{
 				"key": "Host",
-				"value": "www.baidu.com"
+				"value": "{host}"
 			}]
-		}]
-	}]
+		}],
+        "router":{
+            "threadpool":{
+                "size":16,
+                "queuemax":1000
+            }
+        }
+	}],
+	"ssl": {
+		"xxx.com": {
+			"enable": true,
+			"pem_cert": "./res/ssl/xxx.pem",
+			"pem_key": "./res/ssl/xxx.key",
+			"pem_password": ""
+		}
+	}
 }
